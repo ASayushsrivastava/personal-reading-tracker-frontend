@@ -1,0 +1,43 @@
+// Global design tokens — same palette as the design-pass prototype, now as
+// CSS custom properties so both hand-written component styles and the
+// PrimeNG preset (see app.config.ts) can reference a single source.
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --bs-ink: #0c0e13;
+  --bs-ink-2: #15181f;
+  --bs-ink-3: #1d212a;
+  --bs-hairline: #2a2f3a;
+  --bs-text: #e9e4d8;
+  --bs-text-dim: #9298a3;
+  --bs-text-faint: #5c6270;
+  --bs-brass: #c9a05c;
+  --bs-brass-bright: #e0b86e;
+  --bs-sand: #8f8570;
+  --bs-teal: #4c8a80;
+  --bs-plum: #8a5f79;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bs-ink);
+  color: var(--bs-text);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--bs-brass-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}

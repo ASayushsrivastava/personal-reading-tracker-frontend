@@ -1,0 +1,1 @@
+import"./chunk-4CLCTAJ7.js";var t=[{path:"",loadComponent:()=>import("./chunk-XH4F4E5H.js").then(o=>o.CollectionsPageComponent),title:"Bookshelve \u2014 Collections"}];export{t as COLLECTIONS_ROUTES};
